@@ -77,7 +77,7 @@ export default function UseCasesPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-950 text-white">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
@@ -134,7 +134,7 @@ export default function UseCasesPage() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-2">Lightning Fast</h3>
-              <p className="text-gray-400">Solana's blockchain enables 65,000+ transactions per second with sub-second finality.</p>
+              <p className="text-gray-400">Solana&apos;s blockchain enables 65,000+ transactions per second with sub-second finality.</p>
             </div>
             
             <div className="text-center p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-cyan-500 transition-colors duration-300">
@@ -154,7 +154,7 @@ export default function UseCasesPage() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-2">Eco-Friendly</h3>
-              <p className="text-gray-400">Solana's Proof of History consensus is significantly more energy efficient than Proof of Work blockchains.</p>
+              <p className="text-gray-400">Solana&apos;s Proof of History consensus is significantly more energy efficient than Proof of Work blockchains.</p>
             </div>
           </div>
         </div>
