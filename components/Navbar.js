@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 export default function FuturisticNavbar() {
@@ -21,29 +22,29 @@ export default function FuturisticNavbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <a href="#" className="flex items-center space-x-2 group">
+            <Link href="/" className="flex items-center space-x-2 group">
               <Image src={'/logo.png'} width={500} height={500} alt='Alpha pay logo' className='w-12 h-12 lg:w-16 lg:h-16 rounded-md object-cover' />
               <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
                 Alpha Pay
               </span>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-1">
-            <a href="/" className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-gray-800/50 transition-all duration-300 group relative">
+            <Link href="/" className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-gray-800/50 transition-all duration-300 group relative">
               <span>Home</span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a href="/tokenomics" className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-gray-800/50 transition-all duration-300 group relative">
+            </Link>
+            <Link href="/tokenomics" className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-gray-800/50 transition-all duration-300 group relative">
               <span>Tokenomics</span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a href="/usecases" className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-gray-800/50 transition-all duration-300 group relative">
+            </Link>
+            <Link href="/usecases" className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-gray-800/50 transition-all duration-300 group relative">
               <span>Use Cases</span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a href="/whitepaper" className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-gray-800/50 transition-all duration-300 group relative">
+            </Link>
+            <a href="https://drive.google.com/file/d/1zBkPt_hXMZR6Y3Y2qRgJ2xDnR64SHsoi/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-gray-800/50 transition-all duration-300 group relative">
               <span>Whitepaper</span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
@@ -96,16 +97,16 @@ export default function FuturisticNavbar() {
       {/* Mobile Menu */}
       <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden bg-gray-900/95 backdrop-blur-lg border-t border-gray-800`} id="mobile-menu">
         <div className="px-2 pt-2 pb-3 space-y-1">
-          <a href="/" className="text-gray-300 hover:bg-gray-800 hover:text-white block px-3 py-3 rounded-md text-base font-medium transition-colors duration-300 border-l-2 border-transparent hover:border-blue-400">
+          <Link href="/" className="text-gray-300 hover:bg-gray-800 hover:text-white block px-3 py-3 rounded-md text-base font-medium transition-colors duration-300 border-l-2 border-transparent hover:border-blue-400">
             Home
-          </a>
-          <a href="/tokenomics" className="text-gray-300 hover:bg-gray-800 hover:text-white block px-3 py-3 rounded-md text-base font-medium transition-colors duration-300 border-l-2 border-transparent hover:border-blue-400">
+          </Link>
+          <Link href="/tokenomics" className="text-gray-300 hover:bg-gray-800 hover:text-white block px-3 py-3 rounded-md text-base font-medium transition-colors duration-300 border-l-2 border-transparent hover:border-blue-400">
             Tokenomics
-          </a>
-          <a href="/usecases" className="text-gray-300 hover:bg-gray-800 hover:text-white block px-3 py-3 rounded-md text-base font-medium transition-colors duration-300 border-l-2 border-transparent hover:border-blue-400">
+          </Link>
+          <Link href="/usecases" className="text-gray-300 hover:bg-gray-800 hover:text-white block px-3 py-3 rounded-md text-base font-medium transition-colors duration-300 border-l-2 border-transparent hover:border-blue-400">
             Use Cases
-          </a>
-          <a href="/whitepaper" className="text-gray-300 hover:bg-gray-800 hover:text-white block px-3 py-3 rounded-md text-base font-medium transition-colors duration-300 border-l-2 border-transparent hover:border-blue-400">
+          </Link>
+          <a href="https://drive.google.com/file/d/1zBkPt_hXMZR6Y3Y2qRgJ2xDnR64SHsoi/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:bg-gray-800 hover:text-white block px-3 py-3 rounded-md text-base font-medium transition-colors duration-300 border-l-2 border-transparent hover:border-blue-400">
             Whitepaper
           </a>
           <div className="pt-2 pb-3">
