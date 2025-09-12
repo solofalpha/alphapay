@@ -24,10 +24,10 @@ export default function AboutPage() {
       <div className="flex flex-col md:flex-row items-center gap-12">
         <div className="flex-1">
           <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent mb-6">
-            About AlphaPay
+            About Alpha Pay
           </h1>
           <p className="text-gray-300 text-lg md:text-xl">
-            AlphaPay is transforming the way you send, receive, and manage payments. Built on AI and blockchain technology, we ensure secure, fast, and intelligent transactions.
+            Alpha Pay is transforming the way you send, receive, and manage payments. Built on AI and blockchain technology, we ensure secure, fast, and intelligent transactions.
           </p>
         </div>
 

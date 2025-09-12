@@ -15,7 +15,7 @@ export default function Footer() {
           {/* Brand / Logo */}
           <div>
             <h2 className="text-2xl font-bold bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent">
-              AlphaPay
+              Alpha Pay
             </h2>
             <p className="mt-2 text-gray-300 max-w-sm">
               Smart payments, seamless transactions, and the future of finance — all powered by AI.

@@ -30,7 +30,7 @@ export default function AppFeatures() {
           </h2>
           <p className="text-gray-300 max-w-lg">
             Manage your digital assets with ease — secure, fast, and intuitive.
-            AlphaPay makes it simple for both beginners and pros.
+            Alpha Pay makes it simple for both beginners and pros.
           </p>
 
           {/* Feature List */}
@@ -72,7 +72,7 @@ export default function AppFeatures() {
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
             <img
               src="/app-preview.png"
-              alt="AlphaPay App Preview"
+              alt="Alpha Pay App Preview"
               className="w-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>

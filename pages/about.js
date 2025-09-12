@@ -10,7 +10,7 @@ export default function About() {
         About AlphaPay
       </h1>
       <p className="max-w-2xl text-center mb-8 text-gray-300">
-        AlphaPay is revolutionizing payments with AI-powered smart transactions, 
+        Alpha Pay is revolutionizing payments with AI-powered smart transactions, 
         providing seamless, secure, and futuristic financial solutions.
       </p>
 

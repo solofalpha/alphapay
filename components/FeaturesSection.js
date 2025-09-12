@@ -36,7 +36,7 @@ export default function FeaturesSection() {
           Our Features
         </h2>
         <p className="text-gray-600 mb-16 max-w-2xl mx-auto">
-          Discover the cutting-edge features that make AlphaPay the ultimate AI-powered payment solution.
+          Discover the cutting-edge features that make Alpha Pay the ultimate AI-powered payment solution.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
