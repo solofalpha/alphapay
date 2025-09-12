@@ -12,7 +12,7 @@ export default function WhyAlphaPay() {
     <section className="py-24 bg-gradient-to-b from-[#0a0f1c]/80 via-[#0d1b2a]/90 to-[#0a192f] text-white">
       <div className="max-w-5xl mx-auto px-6 text-center">
         <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent mb-12">
-          Why AlphaPay?
+          Why Alpha Pay?
         </h2>
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-10">

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -61,11 +62,11 @@ export default function HeroSection() {
                   {slide.subtitle}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up">
-                  <button className="relative px-8 py-4 text-lg font-medium group">
-                    <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-1 translate-y-1 bg-gradient-to-r from-blue-600 to-cyan-600 group-hover:-translate-x-0 group-hover:-translate-y-0 rounded-lg"></span>
-                    <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg opacity-90 group-hover:opacity-100 transition-opacity duration-300"></span>
-                    <span className="relative text-white">Get Started</span>
-                  </button>
+               <a href="https://t.me/+LAVc0V_XYN9mZDFk" target="_blank" rel="noopener noreferrer" className="relative px-8 py-4 text-lg font-medium group">
+  <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-1 translate-y-1 bg-gradient-to-r from-blue-600 to-cyan-600 group-hover:-translate-x-0 group-hover:-translate-y-0 rounded-lg"></span>
+  <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg opacity-90 group-hover:opacity-100 transition-opacity duration-300"></span>
+  <span className="relative text-white">Join Our Community</span>
+</a>
                   <button className="px-8 py-4 text-lg font-medium text-white bg-transparent border border-blue-500 rounded-lg hover:bg-blue-500/10 transition-colors duration-300">
                     Learn More
                   </button>

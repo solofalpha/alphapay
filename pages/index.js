@@ -8,6 +8,7 @@ import FeaturesSection from "@/components/FeaturesSection";
 import MissionVisionSection from "@/components/MissionVisionSection";
 import AppFeatures from "@/components/AppFeatures";
 import AICryptoSection from "@/components/AICryptoSection";
+import ModernRoadmap from "@/components/RoadMap";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <FeaturesSection />
          <AppFeatures />
          <AICryptoSection />
+        <ModernRoadmap /> 
       </main>
       <Footer />
     </div>
