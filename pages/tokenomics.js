@@ -101,7 +101,7 @@ export default function TokenomicsPage() {
       <section className="py-12 px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center mb-12">Token Metrics</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex flex-col md:flex-row justify-center gap-8">
           {/* Total Supply */}
           <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-colors duration-300">
             <div className="text-center">
@@ -113,20 +113,6 @@ export default function TokenomicsPage() {
               <h3 className="text-2xl font-bold mb-2">Total Supply</h3>
               <p className="text-4xl font-bold text-blue-400 mb-2">1,000,000,000</p>
               <p className="text-gray-400">ALPHA Tokens</p>
-            </div>
-          </div>
-          
-          {/* Initial Market Cap */}
-          <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-cyan-500 transition-colors duration-300">
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-cyan-500/10 rounded-full mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-2">Initial Market Cap</h3>
-              <p className="text-4xl font-bold text-cyan-400 mb-2">$2,500,000</p>
-              <p className="text-gray-400">At $0.025 per token</p>
             </div>
           </div>
           
@@ -182,13 +168,13 @@ export default function TokenomicsPage() {
             {/* Supply Information Card - Moved and Fixed Here */}
             <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700">
               <div className="space-y-4">
-                <div className="flex flex-wrap items-baseline gap-2">
+                <div className="flex items-center gap-2">
                   <span className="text-lg font-bold text-blue-400">Total Supply:</span>
-                  <span className="text-lg font-bold text-white-400">1 Billion</span>
+                  <span className="text-lg font-bold text-blue-400">1 Billion</span>
                 </div>
-                <div className="flex flex-wrap items-baseline gap-2">
+                <div className="flex items-center gap-2">
                   <span className="text-lg font-bold text-cyan-400">Circulating Supply:</span>
-                  <span className="text-lg font-bold text-white-400">100%</span>
+                  <span className="text-lg font-bold text-blue-400">100%</span>
                 </div>
               </div>
             </div>
