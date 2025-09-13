@@ -9,6 +9,7 @@ import MissionVisionSection from "@/components/MissionVisionSection";
 import AppFeatures from "@/components/AppFeatures";
 import AICryptoSection from "@/components/AICryptoSection";
 import ModernRoadmap from "@/components/RoadMap";
+import EasySwapSteps from "@/components/EasySwapSteps";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
          <AppFeatures />
          <AICryptoSection />
         <ModernRoadmap /> 
+        <EasySwapSteps /> 
       </main>
       <Footer />
     </div>
