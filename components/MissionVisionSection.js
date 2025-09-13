@@ -5,15 +5,15 @@ import Image from "next/image";
 // Using placeholder images that work with Next.js Image component
 const slides = [
   {
-    image: "/images/mission-slide1.jpg",
+    image: "/mis3.jpg",
     text: "AI-driven payments that are seamless and secure.",
   },
   {
-    image: "/images/mission-slide2.jpg",
+    image: "/mis1.jpg",
     text: "Global financial solutions at your fingertips.",
   },
   {
-    image: "/images/mission-slide3.jpg",
+    image: "/mis2.jpg",
     text: "Empowering businesses and individuals worldwide.",
   },
 ];

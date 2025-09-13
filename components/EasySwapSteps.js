@@ -97,7 +97,7 @@ export default function EasySwapSteps() {
                 <p className="text-gray-300 text-sm mb-4">{step.description}</p>
                 
                 {/* Contract Address Section (only for step 5) */}
-                {step.hasContract && (
+                {/* {step.hasContract && (
                   <div className="mt-auto pt-4 border-t border-gray-700">
                     <div className="flex items-center justify-between">
                       <div>
@@ -134,7 +134,7 @@ export default function EasySwapSteps() {
                       </div>
                     )}
                   </div>
-                )}
+                )} */}
                 
                 {/* Connector line (hidden on mobile) */}
                 {index < steps.length - 1 && (
