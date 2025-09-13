@@ -1,10 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export default function TokenomicsPage() {
+  const [circleProgress, setCircleProgress] = useState(20);
+  const circleRef = useRef(null);
+  
   // Token distribution data
   const tokenDistribution = [
     { category: 'Public Sale', percentage: 40, color: 'bg-blue-500' },
@@ -53,6 +56,32 @@ export default function TokenomicsPage() {
       ),
     },
   ];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          // Animate from 20% to 100% quickly but smoothly
+          let progress = 20;
+          const interval = setInterval(() => {
+            progress += 4; // Adjust this value for speed
+            if (progress >= 100) {
+              progress = 100;
+              clearInterval(interval);
+            }
+            setCircleProgress(progress);
+          }, 20); // Adjust this value for smoothness
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (circleRef.current) {
+      observer.observe(circleRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-950 text-white">
@@ -124,21 +153,43 @@ export default function TokenomicsPage() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/20">
         <h2 className="text-3xl font-bold text-center mb-12">Token Distribution</h2>
         
+        {/* Alpha Pay Description */}
+        <div className="text-center mb-8 max-w-2xl mx-auto">
+          <h3 className="text-2xl font-bold text-white mb-4">Alpha Pay</h3>
+          <p className="text-gray-300">
+            The total supply of Alpha Pay tokens is 1 billion, with a fair launch and 100% of the supply circulating.
+          </p>
+        </div>
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Distribution Chart */}
-          <div className="relative">
-            <div className="w-64 h-64 mx-auto relative">
-              {/* Pie chart representation */}
+          <div className="relative" ref={circleRef}>
+            <div className="w-64 h-64 mx-auto relative mb-12">
+              {/* Animated Pie chart */}
               <div className="absolute inset-0 rounded-full overflow-hidden">
-                <div className="absolute inset-0 bg-blue-500 transform -rotate-0 clip-[0_50%_50%_0]"></div>
-                <div className="absolute inset-0 bg-cyan-400 transform rotate-144 clip-[0_50%_50%_0]"></div>
-                <div className="absolute inset-0 bg-purple-500 transform rotate-216 clip-[0_50%_50%_0]"></div>
-                <div className="absolute inset-0 bg-indigo-500 transform rotate-252 clip-[0_50%_50%_0]"></div>
-                <div className="absolute inset-0 bg-blue-700 transform rotate-324 clip-[0_50%_50%_0]"></div>
+                <div className="absolute inset-0 bg-blue-500 transform -rotate-0" style={{ clipPath: `inset(0 0 0 ${100-circleProgress}%)` }}></div>
+                <div className="absolute inset-0 bg-cyan-400 transform rotate-144" style={{ clipPath: `inset(0 0 0 ${100-circleProgress}%)` }}></div>
+                <div className="absolute inset-0 bg-purple-500 transform rotate-216" style={{ clipPath: `inset(0 0 0 ${100-circleProgress}%)` }}></div>
+                <div className="absolute inset-0 bg-indigo-500 transform rotate-252" style={{ clipPath: `inset(0 0 0 ${100-circleProgress}%)` }}></div>
+                <div className="absolute inset-0 bg-blue-700 transform rotate-324" style={{ clipPath: `inset(0 0 0 ${100-circleProgress}%)` }}></div>
               </div>
               
               <div className="absolute inset-0 rounded-full bg-gray-900 m-8 flex items-center justify-center">
-                <span className="text-2xl font-bold">100%</span>
+                <span className="text-2xl font-bold">{circleProgress}%</span>
+              </div>
+            </div>
+
+            {/* Supply Information Card - Moved and Fixed Here */}
+            <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700">
+              <div className="space-y-4">
+                <div className="flex flex-wrap items-baseline gap-2">
+                  <span className="text-lg font-bold text-blue-400">Total Supply:</span>
+                  <span className="text-2xl font-semibold">1 Billion</span>
+                </div>
+                <div className="flex flex-wrap items-baseline gap-2">
+                  <span className="text-lg font-bold text-cyan-400">Circulating Supply:</span>
+                  <span className="text-2xl font-semibold">100%</span>
+                </div>
               </div>
             </div>
           </div>
@@ -215,7 +266,7 @@ export default function TokenomicsPage() {
                   <td className="px-6 py-4 whitespace-nowrap">Liquidity Pool</td>
                   <td className="px-6 py-4 whitespace-nowrap">15%</td>
                   <td className="px-6 py-4 whitespace-nowrap">12 months linear</td>
-                    <td className="px-6 py-4 whitespace-nowrap">None</td>
+                  <td className="px-6 py-4 whitespace-nowrap">None</td>
                 </tr>
                 <tr>
                   <td className="px-6 py-4 whitespace-nowrap">Reserve Fund</td>
