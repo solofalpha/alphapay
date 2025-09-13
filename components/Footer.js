@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Facebook, Twitter } from "lucide-react"; 
+import { FaTiktok, FaTelegramPlane } from "react-icons/fa"; // TikTok + Telegram
 
 export default function Footer() {
   return (
@@ -12,8 +13,8 @@ export default function Footer() {
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-10">
           
-          {/* Brand / Logo */}
-          <div>
+          {/* Brand / Logo - Force Centered */}
+          <div className="flex flex-col items-center text-center">
             <h2 className="text-2xl font-bold bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent">
               Alpha Pay
             </h2>
@@ -26,41 +27,46 @@ export default function Footer() {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 text-gray-300 font-medium">
             <Link href="/" className="hover:text-white transition">Home</Link>
             <Link href="/about" className="hover:text-white transition">About</Link>
-            <Link href="/services" className="hover:text-white transition">Services</Link>
-            <Link href="/pricing" className="hover:text-white transition">Pricing</Link>
-            <Link href="/contact" className="hover:text-white transition">Contact</Link>
             <Link href="/roadmap" className="hover:text-white transition">Roadmap</Link>
           </div>
 
           {/* Social Icons */}
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://www.facebook.com/share/16PuAP8XEg/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition 
               hover:shadow-[0_0_15px_#00c6ff] hover:-translate-y-1"
             >
               <Facebook size={20} />
             </a>
             <a
-              href="#"
+              href="https://x.com/Alphapaytech?t=SDUDPQ3JunTDqWscDM7_Vg&s=09"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition 
               hover:shadow-[0_0_15px_#00c6ff] hover:-translate-y-1"
             >
               <Twitter size={20} />
             </a>
             <a
-              href="#"
+              href="https://www.tiktok.com/@alphapaytech?_t=ZS-8ze41KDmWxu&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition 
               hover:shadow-[0_0_15px_#00c6ff] hover:-translate-y-1"
             >
-              <Linkedin size={20} />
+              <FaTiktok size={20} />
             </a>
             <a
-              href="#"
+              href="https://t.me/+LAVc0V_XYN9mZDFk"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition 
               hover:shadow-[0_0_15px_#00c6ff] hover:-translate-y-1"
             >
-              <Instagram size={20} />
+              <FaTelegramPlane size={20} />
             </a>
           </div>
         </div>
