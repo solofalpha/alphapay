@@ -184,11 +184,11 @@ export default function TokenomicsPage() {
               <div className="space-y-4">
                 <div className="flex flex-wrap items-baseline gap-2">
                   <span className="text-lg font-bold text-blue-400">Total Supply:</span>
-                  <span className="text-2xl font-semibold">1 Billion</span>
+                  <span className="text-lg font-bold text-white-400">1 Billion</span>
                 </div>
                 <div className="flex flex-wrap items-baseline gap-2">
                   <span className="text-lg font-bold text-cyan-400">Circulating Supply:</span>
-                  <span className="text-2xl font-semibold">100%</span>
+                  <span className="text-lg font-bold text-white-400">100%</span>
                 </div>
               </div>
             </div>
