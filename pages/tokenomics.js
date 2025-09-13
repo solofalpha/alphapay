@@ -215,7 +215,7 @@ export default function TokenomicsPage() {
       </section>
 
       {/* Vesting Schedule */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/20">
+      {/* <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/20">
         <h2 className="text-3xl font-bold text-center mb-12">Vesting Schedule</h2>
         
         <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700">
@@ -264,7 +264,7 @@ export default function TokenomicsPage() {
             </table>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 text-center">
