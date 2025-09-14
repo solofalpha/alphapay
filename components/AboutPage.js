@@ -10,7 +10,7 @@ export default function ModernAboutSection() {
   const aboutCards = [
     {
       title: "Executive Summary",
-      content: "Alpha Pay is a utility token built on the Solana blockchain, designed to deliver fast, low-cost, and inclusive financial solutions for a global audience. Leveraging Solana's high-speed, scalable infrastructure, Alpha Pay enables peer-to-peer payments, micropayments for digital services, loyalty and rewards programs, cross-border remittances, and decentralized finance (DeFi) integration.",
+      content: "Alpha Pay is a utility token built on the Solana blockchain, designed to deliver fast, low-cost, and inclusive financial solutions for a global audience. Leveraging Solana&apos;s high-speed, scalable infrastructure, Alpha Pay enables peer-to-peer payments, micropayments for digital services, loyalty and rewards programs, cross-border remittances, and decentralized finance (DeFi) integration.",
       icon: "📊"
     },
     {
@@ -20,12 +20,12 @@ export default function ModernAboutSection() {
     },
     {
       title: "The Challenge",
-      content: "High transaction fees, slow cross-border transfers, and limited access to financial services persist in today's global financial landscape. Alpha Pay addresses these pain points head-on.",
+      content: "High transaction fees, slow cross-border transfers, and limited access to financial services persist in today&apos;s global financial landscape. Alpha Pay addresses these pain points head-on.",
       icon: "⚡"
     },
     {
       title: "The Solution",
-      content: "Leveraging Solana's high-throughput blockchain to deliver a versatile utility token tailored to modern financial needs, focusing on speed, affordability, and accessibility.",
+      content: "Leveraging Solana&apos;s high-throughput blockchain to deliver a versatile utility token tailored to modern financial needs, focusing on speed, affordability, and accessibility.",
       icon: "💡"
     }
   ];
@@ -36,7 +36,7 @@ export default function ModernAboutSection() {
       setActiveCard((prev) => (prev + 1) % aboutCards.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [aboutCards.length]);
 
   return (
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
@@ -139,7 +139,7 @@ export default function ModernAboutSection() {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 rounded-2xl p-6 border border-blue-500/20">
             <h4 className="font-bold text-blue-400 mb-3">Solana Powered</h4>
-            <p className="text-gray-300">Built on the world's fastest blockchain for instant transactions</p>
+            <p className="text-gray-300">Built on the world&apos;s fastest blockchain for instant transactions</p>
           </div>
           <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 rounded-2xl p-6 border border-blue-500/20">
             <h4 className="font-bold text-blue-400 mb-3">Global Reach</h4>
