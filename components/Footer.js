@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Facebook, Twitter } from "lucide-react"; 
-import { FaTiktok, FaTelegramPlane } from "react-icons/fa"; // TikTok + Telegram
+import { FaTiktok, FaTelegramPlane } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -24,10 +24,10 @@ export default function Footer() {
           </div>
 
           {/* Navigation Links */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 text-gray-300 font-medium">
-            <Link href="/" className="hover:text-white transition">Home</Link>
-            <Link href="/about" className="hover:text-white transition">About</Link>
-            <Link href="/roadmap" className="hover:text-white transition">Roadmap</Link>
+          <div className="flex flex-col items-center sm:grid sm:grid-cols-3 sm:gap-6 text-gray-300 font-medium md:flex md:flex-row">
+            <Link href="/" className="hover:text-white transition py-1 sm:py-0">Home</Link>
+            <Link href="/#about" className="hover:text-white transition py-1 sm:py-0">About</Link>
+            <Link href="/#roadmap" className="hover:text-white transition py-1 sm:py-0">Roadmap</Link>
           </div>
 
           {/* Social Icons */}

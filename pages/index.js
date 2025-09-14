@@ -10,6 +10,7 @@ import AppFeatures from "@/components/AppFeatures";
 import AICryptoSection from "@/components/AICryptoSection";
 import ModernRoadmap from "@/components/RoadMap";
 import EasySwapSteps from "@/components/EasySwapSteps";
+import AboutPage from "@/components/AboutPage";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <HeroSection />
         <MarqueeSection />
         <WhyAlphaPay />
+        <AboutPage />
         <MissionVisionSection />
         <FeaturesSection />
          <AppFeatures />
