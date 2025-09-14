@@ -1,5 +1,6 @@
 "use client";
 import { Shield, Zap, BarChart } from "lucide-react";
+import Image from "next/image"; // Import the Image component
 
 export default function AppFeatures() {
   const features = [
@@ -51,15 +52,21 @@ export default function AppFeatures() {
 
           {/* Download Buttons */}
           <div className="flex gap-4 pt-4">
-            <img
+            <Image
               src="/google-play-badge.png"
               alt="Download on Google Play"
-              className="h-10 md:h-12 cursor-pointer hover:scale-105 transition"
+              width={160}
+              height={48}
+              className="h-10 md:h-12 w-auto cursor-pointer hover:scale-105 transition"
+              priority
             />
-            <img
+            <Image
               src="/app-store-badge.png"
               alt="Download on App Store"
-              className="h-10 md:h-12 cursor-pointer hover:scale-105 transition"
+              width={160}
+              height={48}
+              className="h-10 md:h-12 w-auto cursor-pointer hover:scale-105 transition"
+              priority
             />
           </div>
         </div>
@@ -70,10 +77,13 @@ export default function AppFeatures() {
             Coming Soon
           </div>
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-            <img
+            <Image
               src="/app-preview.png"
               alt="Alpha Pay App Preview"
+              width={500}
+              height={500}
               className="w-full object-cover"
+              priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
