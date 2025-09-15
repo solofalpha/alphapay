@@ -9,7 +9,6 @@ import ModernAboutSection from "@/components/AboutPage";
 import MissionVision from "@/components/MissionVisionSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import AppFeatures from "@/components/AppFeatures";
-import AICryptoSection from "@/components/AICryptoSection";
 import ModernRoadmap from "@/components/ModernRoadmap";
 import EasySwapSteps from "@/components/EasySwapSteps";
 
@@ -26,7 +25,6 @@ export default function Home() {
         <MissionVision />
         <FeaturesSection />
         <AppFeatures />
-        <AICryptoSection />
         <ModernRoadmap />
         <EasySwapSteps />
         
