@@ -109,7 +109,7 @@ export default function TokenomicsPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
           Alpha Pay Tokenomics
         </h1>
@@ -119,7 +119,7 @@ export default function TokenomicsPage() {
       </section>
 
       {/* Token Metrics */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8">
+      <section className="py-1 px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center mb-12">Token Metrics</h2>
         
         <div className="flex flex-col md:flex-row justify-center gap-8">

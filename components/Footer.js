@@ -36,8 +36,7 @@ export default function Footer() {
               href="https://www.facebook.com/share/16PuAP8XEg/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition 
-              hover:shadow-[0_0_15px_#00c6ff] hover:-translate-y-1"
+              className="p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition hover:shadow-[0_0_15px_#00c6ff] hover:-translate-y-1"
             >
               <Facebook size={20} />
             </a>
@@ -45,8 +44,7 @@ export default function Footer() {
               href="https://x.com/Alphapaytech?t=SDUDPQ3JunTDqWscDM7_Vg&s=09"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition 
-              hover:shadow-[0_0_15px_#00c6ff] hover:-translate-y-1"
+              className="p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition hover:shadow-[0_0_15px_#00c6ff] hover:-translate-y-1"
             >
               <Twitter size={20} />
             </a>
@@ -54,8 +52,7 @@ export default function Footer() {
               href="https://www.tiktok.com/@alphapaytech?_t=ZS-8ze41KDmWxu&_r=1"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition 
-              hover:shadow-[0_0_15px_#00c6ff] hover:-translate-y-1"
+              className="p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition hover:shadow-[0_0_15px_#00c6ff] hover:-translate-y-1"
             >
               <FaTiktok size={20} />
             </a>
@@ -63,12 +60,21 @@ export default function Footer() {
               href="https://t.me/+LAVc0V_XYN9mZDFk"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition 
-              hover:shadow-[0_0_15px_#00c6ff] hover:-translate-y-1"
+              className="p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition hover:shadow-[0_0_15px_#00c6ff] hover:-translate-y-1"
             >
               <FaTelegramPlane size={20} />
             </a>
           </div>
+        </div>
+
+        {/* Email Section - More prominent on mobile */}
+        <div className="mt-8 text-center">
+          <a 
+            href="mailto:support@alphapayai.tech" 
+            className="inline-block text-blue-400 hover:text-blue-300 transition-colors text-lg font-medium py-2 px-4 bg-blue-500/10 rounded-lg border border-blue-500/20"
+          >
+            support@alphapayai.tech
+          </a>
         </div>
 
         {/* Divider */}

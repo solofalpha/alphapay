@@ -1,16 +1,18 @@
 "use client";
 import HeroSection from "@/components/HeroSection";
 import MarqueeSection from "@/components/MarqueeSection";
-import WhyAlphaPay from "@/components/WhyAlphaPay";
+
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import WhyAlphaPay from "@/components/WhyAlphaPay";
+import ModernAboutSection from "@/components/AboutPage";
+import MissionVision from "@/components/MissionVisionSection";
 import FeaturesSection from "@/components/FeaturesSection";
-import MissionVisionSection from "@/components/MissionVisionSection";
 import AppFeatures from "@/components/AppFeatures";
 import AICryptoSection from "@/components/AICryptoSection";
-import ModernRoadmap from "@/components/RoadMap";
+import ModernRoadmap from "@/components/Roadmap";
 import EasySwapSteps from "@/components/EasySwapSteps";
-import AboutPage from "@/components/AboutPage";
+
 
 export default function Home() {
   return (
@@ -20,13 +22,14 @@ export default function Home() {
         <HeroSection />
         <MarqueeSection />
         <WhyAlphaPay />
-        <AboutPage />
-        <MissionVisionSection />
+        <ModernAboutSection />
+        <MissionVision />
         <FeaturesSection />
-         <AppFeatures />
-         <AICryptoSection />
-        <ModernRoadmap /> 
-        <EasySwapSteps /> 
+        <AppFeatures />
+        <AICryptoSection />
+        <ModernRoadmap />
+        <EasySwapSteps />
+        
       </main>
       <Footer />
     </div>
